@@ -19,9 +19,12 @@ const Projects = (props) => {
   //const [state, dispatch] = useReducer(reducer, iState)
   return (
     <div className="projects">
-      {projectArray.map((project) => (
-        <ProjectCard project={project} />
-      ))}
+      <h2>Projects</h2>
+      <div className="project-list">
+        {projectArray.map((project) => (
+          <ProjectCard project={project} />
+        ))}
+      </div>
     </div>
   )
 }

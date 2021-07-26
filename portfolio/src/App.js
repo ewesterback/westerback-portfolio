@@ -1,17 +1,13 @@
 import './App.css'
 import { Switch, Route } from 'react-router-dom'
-import Hero from './pages/Hero'
-import About from './pages/About'
-import Projects from './pages/Projects'
+import Main from './pages/Main'
 import Resume from './pages/Resume'
 
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <About />
-      <Projects />
-      <Resume />
+      <Route exact path="/" render={(props) => <Main {...props} />} />
+      <Route path="/resume" render={(props) => <Resume {...props} />} />
     </div>
   )
 }
