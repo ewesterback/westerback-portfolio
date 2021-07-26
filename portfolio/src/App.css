@@ -5,32 +5,41 @@ font-family: 'Oswald', sans-serif;
 font-family: 'Raleway', sans-serif;
 font-family: 'Staatliches', cursive;
 */
-.html {
+html {
   margin: 0;
   padding: 0;
 }
 .hero {
   display: grid;
-  grid-template-columns: 4em 4em 1fr 1fr 4em 4em;
+  grid-template-columns: 4rem 4rem 1fr 1fr 4rem 4rem;
   grid-template-rows: 4em 1fr 4em;
   gap: 0px 0px;
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 .hero-right-side {
   grid-area: 2 / 4 / 3 / 6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .hero h1,
-h2 {
-  color: white;
+.hero h2 {
   padding: 0;
-  background-color: #4591bb;
-  /* margin: 20vw; */
   /* font-family: 'Oswald', sans-serif; */
   font-family: 'Staatliches', cursive;
 }
 .hero h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  color: #4591bb;
+  margin: 0;
+}
+.hero h2 {
+  padding: 1rem;
+  background-color: #6dd1d1;
+  color: white;
+  margin: 0;
 }
 .top-rectangle {
   grid-area: 1 / 1 / 2 / 3;
@@ -52,10 +61,11 @@ h2 {
 .about {
   background-color: #feda65;
   padding: 1rem;
+  width: 100vw;
 }
 .year-group {
   display: grid;
-  grid-template-columns: 4em 4em 8em 1fr 1fr 4em 4em;
+  grid-template-columns: 4rem 4rem 8rem 1fr 1fr 4rem 4rem;
   grid-template-rows: 1fr;
   gap: 0px 0px;
   width: 100%;
@@ -70,4 +80,30 @@ h2 {
 }
 .timeline-description {
   grid-area: 1 / 4 / 2 / 7;
+}
+
+/* ------------- Project ----------------  */
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.project-card {
+  width: 20rem;
+  height: 20rem;
+  background-color: #6dd1d1;
+  margin: 1rem;
+  border: 5px solid #6dd1d1;
+}
+.project-card img {
+  width: 20rem;
+}
+
+@media screen and (max-width: 700px) {
+  html {
+    font-size: 10px;
+    background-color: teal;
+  }
 }

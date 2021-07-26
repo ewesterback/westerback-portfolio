@@ -1,27 +1,55 @@
 import React, { useState, useReducer } from 'react'
 
-// const iState = {
-//   projects: [
-//     {
-//       name: 'Tetris',
-//       languages: ['HTML', 'CSS', 'Javascript']
-//     },
-//     {
-//       name: 'Recipe Database',
-//       languages: ['React', 'Mongoose', 'MongoDB']
-//     }
-//   ],
-//   project: null
-// }
-
+const iState = {
+  selected: false
+}
+const reducer = (state, action) => {
+  switch (action.type) {
+    case 'project-focus':
+      return { ...state, selected: action.payload }
+    case 'project-unfocus':
+      return { ...state, selected: action.payload }
+    default:
+      return state
+  }
+}
 const ProjectCard = (props) => {
-  //const [state, dispatch] = useReducer(reducer, iState)
-  const { state, dispatch } = props
+  const [state, dispatch] = useReducer(reducer, iState)
+  const { project } = props
+  // onMouseEnter={() => dispatch({ type: 'project-focus', payload: true })}
+  //     onMouseLeave={() => dispatch({ type: 'project-focus', payload: false })}
   return (
-    <div className="projects-card">
-      {state.projects.map((project) => (
-        <h2>{project.name}</h2>
-      ))}
+    <div className="project-card">
+      {state.selected ? (
+        <div>
+          <p>{project.name}</p>
+          <a href={project.github} target="_blank">
+            GitHub
+          </a>
+          <a href={project.deployed} target="_blank">
+            Deployed Project
+          </a>
+          {project.languages.map((language) => (
+            <p>{language}</p>
+          ))}
+          <p>{project.briefDescription}</p>
+          <button
+            onClick={() => dispatch({ type: 'project-focus', payload: false })}
+          >
+            Back
+          </button>
+        </div>
+      ) : (
+        <div>
+          <img src={project.image} />
+          <p>{props.project.name}</p>
+          <button
+            onClick={() => dispatch({ type: 'project-focus', payload: true })}
+          >
+            Learn More
+          </button>
+        </div>
+      )}
     </div>
   )
 }
