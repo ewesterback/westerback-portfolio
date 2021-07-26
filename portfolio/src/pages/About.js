@@ -33,7 +33,7 @@ const About = (props) => {
           <div className="timeline-description">
             <h5>Technical Solutions Engineer at Epic Systems</h5>
             <p>
-              International Healthcare Software company with over 250 million
+              International healthcare software company with over 250 million
               patient records in their system
             </p>
           </div>
