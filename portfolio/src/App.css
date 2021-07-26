@@ -107,7 +107,7 @@ html {
   font-family: 'Oswald', sans-serif;
 }
 .projects h2 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 0;
   padding: 0;
   color: #4591bb;
@@ -128,6 +128,10 @@ html {
 }
 .project-card img {
   width: 20rem;
+}
+
+.logo {
+  height: 2rem;
 }
 
 @media screen and (max-width: 1050px) {
