@@ -8,6 +8,7 @@ const Main = (props) => {
   return (
     <div className="main">
       <Hero />
+      <About />
       <Projects />
       <Connect {...props} />
     </div>

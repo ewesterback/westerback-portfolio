@@ -21,7 +21,7 @@ const ProjectCard = (props) => {
   return (
     <div className="project-card">
       {state.selected ? (
-        <div>
+        <div className="project-card-details">
           <p>{project.name}</p>
           <a href={project.github} target="_blank">
             GitHub
@@ -29,9 +29,11 @@ const ProjectCard = (props) => {
           <a href={project.deployed} target="_blank">
             Deployed Project
           </a>
-          {project.languages.map((language) => (
-            <p>{language}</p>
-          ))}
+          <div className="languages">
+            {project.languages.map((language) => (
+              <p>{language}</p>
+            ))}
+          </div>
           <p>{project.briefDescription}</p>
           <button
             onClick={() => dispatch({ type: 'project-focus', payload: false })}

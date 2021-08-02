@@ -14,6 +14,10 @@ const Connect = (props) => {
       <div className="bottom-left-rectangle"></div>
       <div className="connect-content">
         <h2>Learn More About Me</h2>
+        <h3>Excellent Communicator</h3>
+        <h3>Client Focused</h3>
+        <h3>Team Player</h3>
+        <h3>Problem Solver/Debugger</h3>
         <button onClick={onResumeClick}>View Resume</button>
         <div className="connect-links">
           <div className="logo-group">
