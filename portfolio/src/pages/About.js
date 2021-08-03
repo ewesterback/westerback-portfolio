@@ -37,17 +37,11 @@ const About = (props) => {
             conveying technical issues to a variety of audiences, from CIOs of
             hospital system to physicians to technical analysts.
           </p>
-
           <p>
             What my teammates say: "I really want to highlight how great Emily
-            was at communicating…she left me a VERY excellent message to
-            succinctly but clearly tell me exactly what she had done, what
-            worked and what didn't, what she thought next steps should be, etc."
-          </p>
-          <p>
-            "Emily is a great person to work with, she has the ability to
-            explain things in a layman terms and go over it why it should be the
-            way it is"
+            was at communicating" and "Emily is a great person to work with, she
+            has the ability to explain things in a layman terms and go over it
+            why it should be the way it is"
           </p>
         </div>
         <div className="about-group">

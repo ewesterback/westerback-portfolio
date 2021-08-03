@@ -1,6 +1,7 @@
 import React, { useState, useReducer } from 'react'
 import projectArray from '../components/ProjectArray'
 import ProjectCard from '../components/ProjectCard'
+import ProjectCard2 from '../components/ProjectCard2'
 
 // const iState = {
 //   project: null
@@ -21,8 +22,13 @@ const Projects = (props) => {
     <div className="projects">
       <h2>Projects</h2>
       <div className="project-list">
-        {projectArray.map((project) => (
-          <ProjectCard project={project} />
+        {projectArray.map((project, i) => (
+          <div>
+            <ProjectCard2 project={project} key={i} index={i} />
+            {i < projectArray.length - 1 ? (
+              <hr size="2" width="90%" color="#feda65" />
+            ) : null}
+          </div>
         ))}
       </div>
     </div>

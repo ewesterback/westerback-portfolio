@@ -1,11 +1,11 @@
 const projectArray = [
   {
     name: 'MentorUp!',
-    image: 'https://imgur.com/xCTWBHw.jpg',
+    image: 'https://imgur.com/J9xJX3K.jpg',
     languages: ['PostgreSQL', 'Express', 'React', 'NodeJs'],
     briefDescription:
       'Battling imposter syndrome as a minority in STEM can be difficuly, especially when there is a significant lack of peers that look like you.  MentorUp! aims to create a place for minorities to connect and message with others within the software engineering field.  I had a lot of fun implementing messaging and look forward to adding a "read" feature next.',
-    github: 'https://github.com/ewesterback',
+    github: 'https://github.com/ewesterback/ga_project4',
     deployed: 'https://fast-tor-03664.herokuapp.com/'
   },
   {
@@ -19,11 +19,11 @@ const projectArray = [
   },
   {
     name: 'Tetris',
-    image: 'https://imgur.com/fo704Bo.jpg',
+    image: 'https://imgur.com/bqsBtQd.jpg',
     languages: ['HTML', 'CSS', 'Javascript'],
     briefDescription:
       'Studies show that playing Tetris can relieve stress and troubling thoughts by providing a form of distraction.  I had a lot of fun making (and testing!) my version of Tetris made with vanilla javascript and soothing and positive colors.  Figuring out how to rotate non-symmetrical pieces was rewarding, and I look forward to making this mobile compatible.',
-    github: 'https://github.com/ewesterback',
+    github: 'https://github.com/ewesterback/tetris',
     deployed: 'http://tetris-for-anxiety.surge.sh/'
   },
   {
@@ -40,7 +40,7 @@ const projectArray = [
     image: 'https://imgur.com/1MANh29.jpg',
     languages: ['PostgreSQL', 'Flask', 'React Redux', 'NodeJs'],
     briefDescription: `Need somewhere to track your "honey-do's"? Honeydew is sweet— but not too sweet, with only the bells and whistles you need. Honeydew allows users to login to view their personalized to-do lists. They can add different lists and then add and/or delete todos for that list.  We completed this app in a group of 2 in a 24 hour hackathon.  I owned the backend and owned almost all of the dashboard and todos.`,
-    github: 'https://github.com/ewesterback',
+    github: 'https://github.com/ewesterback/honeydew',
     deployed: 'http://tetris-for-anxiety.surge.sh/'
   }
 ]
