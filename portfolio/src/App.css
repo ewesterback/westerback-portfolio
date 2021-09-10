@@ -112,6 +112,7 @@ html {
 .project-title {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 .projects h2 {
   font-family: 'Staatliches', cursive;
@@ -161,6 +162,14 @@ html {
   grid-area: 1 / 1 / 2 / 3;
   margin: 1rem;
 }
+.project-card .links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.project-card a {
+  text-decoration: none;
+}
 .languages {
   display: flex;
   flex-direction: row;
@@ -176,6 +185,13 @@ html {
   width: 0.5rem;
   border-radius: 0.25rem;
   background-color: #feda65;
+  margin: 0.25rem;
+}
+.teal-circle {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #6dd1d1;
   margin: 0.25rem;
 }
 /* .project-list {
@@ -300,6 +316,6 @@ html {
 }
 @media screen and (max-width: 700px) {
   html {
-    font-size: 10px;
+    font-size: 12px;
   }
 }

@@ -20,6 +20,8 @@ const Projects = (props) => {
   //const [state, dispatch] = useReducer(reducer, iState)
   return (
     <div className="projects">
+      <hr size="7" width="90%" color="#feda65" />
+      <a id="projectsGroup"></a>
       <h2>Projects</h2>
       <div className="project-list">
         {projectArray.map((project, i) => (

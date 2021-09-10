@@ -29,14 +29,21 @@ const ProjectCard2 = (props) => {
         }
       >
         <div className="project-title">
-          <h4>{project.name}</h4>
           <a href={project.github} target="_blank">
-            <img className="logo" src={github} alt="GitHub" />
+            <img className="logo" src={project.logo} alt="GitHub" />
+          </a>
+          <h4>{project.name}</h4>
+        </div>
+        <div className="links">
+          <a href={project.deployed} target="_blank">
+            Deployed Project
+          </a>
+          <div className="teal-circle"></div>
+          <a href={project.github} target="_blank">
+            GitHub
           </a>
         </div>
-        <a href={project.deployed} target="_blank">
-          Deployed Project
-        </a>
+
         <div className="languages">
           {project.languages.map((language, i) =>
             i < project.languages.length - 1 ? (

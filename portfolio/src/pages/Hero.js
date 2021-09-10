@@ -22,7 +22,15 @@ const Hero = (props) => {
             constructing elegant solutions to improve the lives of others. When
             I'm not coding, catch me trying to pet all of the dogs and eat all
             of the food in the Bay Area. To learn more about me, check out my
-            projects below, view my resume, or connect with me.
+            <a href="#projectsGroup">projects below</a>,{' '}
+            <span
+              onClick={() => {
+                props.history.push('/resume')
+              }}
+            >
+              view my resume
+            </span>
+            , or connect with me.
           </p>
         </div>
       </div>

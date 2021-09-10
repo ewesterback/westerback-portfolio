@@ -35,13 +35,12 @@ const About = (props) => {
           <p>
             Communication is key when working on teams. I have experience
             conveying technical issues to a variety of audiences, from CIOs of
-            hospital system to physicians to technical analysts.
+            hospital systems to physicians to technical analysts.
           </p>
           <p>
-            What my teammates say: "I really want to highlight how great Emily
-            was at communicating" and "Emily is a great person to work with, she
-            has the ability to explain things in a layman terms and go over it
-            why it should be the way it is"
+            What my teammates say: "Emily is a great person to work with, she
+            has the ability to explain things in a layman terms and go over why
+            it should be the way it is"
           </p>
         </div>
         <div className="about-group">
