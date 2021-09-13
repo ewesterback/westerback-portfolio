@@ -114,6 +114,9 @@ html {
   flex-direction: row;
   margin: 0;
 }
+.project-list {
+  max-width: 1000px;
+}
 .projects h2 {
   font-family: 'Staatliches', cursive;
   font-size: 3.5rem;
